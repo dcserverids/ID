@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Comunity</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    
+    <section class="sec-01">
+        <div class="container">
+            <h2 class="main-title">INFINITY DIMENSION</h2>
+            <div class="content">
+                <div class="image">
+                    <img src="img2.jpg" alt="">
+                </div>
+                <div class="text-box">
+                    <h3>About Us</h3>
+                    <p>Infinity Dimension adalah server yang berbasis gaming di Indonesia.
+                        Tujuan kami adalah membuat komunitas game yang besar dengan aura positif.
+                        Ada Mod dan anggota yang ramah yang dapat membuat Anda merasa nyaman di komunitas kami, tentu saja selama Anda memiliki sikap yang baik.</p>
+                </div>
+            </div>
+            <div class="media-icons">
+                <a> <i class="fab fa-discord"> </i> </a>
+                <a> <i class="fab fa-discord"> </i> </a>
+                <a> <i class="fab fa-discord"> </i> </a>
+                <a> <i class="fab fa-discord"> </i> </a>
+            </div>
+        </div>
+    </section>
+    <section class="sec-02">
+        <div class="container">
+            <h3 class="section-title">Your Mood Booster</h3>
+            <div class="content">
+                <div class="image">
+                    <img src="img1.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h4 class="info-title">Find Out</h4>
+                    <p>Temukan berbagai keunikan dan keseruan didalam server, server ini mampu membuat hari hari mu yang sebelumnya suram dan tidak berwarna menjadi hari yang lebih baik dan penuh warna.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-03">
+        <div class="container">
+            <h3 class="section-title">Kami Semua Menunggumu</h3>
+            <div class="content">
+            <div class="media-info">
+                <li><a href="https://discord.gg/zcrktGgdxb"><i class="fab fa-discord"></i> Join Discord</a></li>
+            </div>
+            <div class="image">
+                <img src="ids.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <script>
+        ScrollReveal({ 
+            reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay: 400
+        });
+
+        ScrollReveal().reveal('.main-title, .section-title', { delay: 500, origin:'left' });
+        ScrollReveal().reveal('.sec-01 .image, .info', { delay: 600, origin:'bottom' });
+        ScrollReveal().reveal('.text-box', { delay: 700, origin:'right' });
+        ScrollReveal().reveal('.media-icons i', { delay: 500, origin:'bottom', interval: 200 });
+        ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 500, origin:'top' });
+        ScrollReveal().reveal('.media-info li', { delay: 500, origin:'left', interval:500 });
+    </script>
+
+</body>
+</html>
